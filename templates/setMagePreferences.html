@@ -1,0 +1,167 @@
+<template name="setMagePreferences">	
+	<form id="setDetails" class="form-horizontal">
+		<div class="row">
+			<div class="col-md-10">
+				<h3>Player details!</h3>
+				<div>Step 1 out of 4: set your mages username & details.</div>
+				<div>You can edit these details later on the options page.</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-xs-12 col-sm-8">			
+				<div class="form-group">
+			  	<label for=username class="col-sm-3 control-label">Username*:</label>
+			    <div class="col-sm-9">
+			    	<input type="text" id="username" name="username" class="form-control" placeholder="Username" required=true>
+			    </div>
+			  </div>		
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-xs-6 col-sm-4">			
+				<div class="form-group">
+			  	<label for=username class="col-sm-6 control-label">Gender*:</label>
+			    <div class="col-sm-6">
+			    	<select class="form-control" required=true name="gender">
+			    		<option value="">--select--</option>
+			    		<option value="female">Female</option>
+			    		<option value="male">Male</option>
+			    		<option value="unknown">Unknown</option>
+			    	</select>
+			    </div>
+			  </div>		
+			</div>
+			<div class="col-md-3 col-xs-6 col-sm-4">			
+				<div class="form-group">
+			  	<label for=username class="col-sm-6 control-label">Age*:</label>
+			    <div class="col-sm-6">
+			    	<input type="number" class="form-control" name="age" required=true>
+			    </div>
+			  </div>		
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-xs-12 col-sm-8">			
+				<div class="form-group">
+			    <div class="col-sm-9 col-sm-offset-3">
+			    	<input type="submit" class="btn btn-warning" value="Next step">
+			    </div>
+			  </div>		
+			</div>
+		</div>
+	</form>
+</template>
+<template name="setMageClass">
+	<div class="row">
+		<div class="col-md-10">
+			<h3>Choose your class!</h3>
+			<div>Step 2 out of 4: set your mages Class.</div>
+			<div>Think carefully before you choose, you can't change your class after this.</div>
+		</div>
+	</div>
+	<div class="row chooseClass">		
+		<div class="row-height">
+			<div class="col-md-6 col-sm-12 col-xs-12 col-height">
+				<div  class="inside inside-full-height">
+					<h4 class="text-success">Forest Mage</h4>
+					<div>
+						<p>The Forest Magi draw their powers from the heart of the forest. They command hordes of dangerous wild animals. They are righteous but they are not naive: they will only help others if they benefit from it themselves.</p>
+						<p>Forest Magi despise the Earth Magi with their underground dungeons and dumb heavy-weighted creatures.</p>
+					</div>		
+					<button class="btn btn-success chooseClass" value="forest" id="forest"><strong>Pick this class</strong></button>		
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12 col-sm-12 col-height">
+				<div  class="inside inside-full-height">
+					<h4 class="text-inverse">Death Mage</h4>
+					<div>
+						<p>The Death Magi summon dark forces from the pits of hell, and convert the dead to living nightmares. They rarely communicate with other magi, and only do so if they can benefit from it.</p>
+						<p>They hate the agile and versatile forces of the Air Magi.</p>
+					</div>
+					<button class="btn btn-default chooseClass" value="death" id="death"><strong>Pick this class</strong></button>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="row chooseClass">
+		<div class="row-height">
+			<div class="col-md-6 col-xs-12 col-sm-12 col-height">
+				<div  class="inside inside-full-height">
+					<h4 class="text-info">Air Mage</h4>
+					<div>
+						<p>The Air Magi are the most sociable of the four classes. They summon intelligent creatures out of thin air and call demons from the mysterious depths of the oceans. They live in wide, open castles. </p>
+						<p>They detest the Forest Magi and their deep, unpenetrable forests filled with mystic dangers.</p>
+					</div>	
+					<button class="btn btn-info chooseClass" value="air" id="air"><strong>Pick this class</strong></button>			
+				</div>		
+			</div>
+			<div class="col-md-6 col-xs-12 col-sm-12 col-height">
+				<div  class="inside inside-full-height">
+					<h4 class="text-warning">Earth Mage</h4>
+					<div>
+						<p>The Earth Magi are introvert, determined wizards. They lead their powerful, simple-minded armies to victory with an iron fist. They believe religiously in the power of the earth and tend to turn to the darker side of magic in their quest for power. Earth Magi live mainly in the underground dungeon complex underneath their castle. </p>
+						<p>They dislike the Death Magi greatly because they have no respect for anything alive and live without principles.</p>
+					</div>
+					<button class="btn btn-warning chooseClass" value="earth" id="earth"><strong>Pick this class</strong></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+<template name="setWorkers">
+	<div class="row">
+		<div class="col-md-10">
+			<h3>Choose your class!</h3>
+			<div>Step 2 out of 4: set your mages Class.</div>
+			<div>Think carefully before you choose, you can't change your class after this.</div>
+		</div>
+	</div>
+	<div class="row chooseClass">		
+		<div class="row-height">
+			<div class="col-md-6 col-sm-12 col-xs-12 col-height">
+				<div  class="inside inside-full-height">
+					<h4 class="text-success">Forest Mage</h4>
+					<div>
+						<p>The Forest Magi draw their powers from the heart of the forest. They command hordes of dangerous wild animals. They are righteous but they are not naive: they will only help others if they benefit from it themselves.</p>
+						<p>Forest Magi despise the Earth Magi with their underground dungeons and dumb heavy-weighted creatures.</p>
+					</div>		
+					<button class="btn btn-success chooseClass" value="forest" id="forest"><strong>Pick this class</strong></button>		
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-12 col-sm-12 col-height">
+				<div  class="inside inside-full-height">
+					<h4 class="text-inverse">Death Mage</h4>
+					<div>
+						<p>The Death Magi summon dark forces from the pits of hell, and convert the dead to living nightmares. They rarely communicate with other magi, and only do so if they can benefit from it.</p>
+						<p>They hate the agile and versatile forces of the Air Magi.</p>
+					</div>
+					<button class="btn btn-default chooseClass" value="death" id="death"><strong>Pick this class</strong></button>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="row chooseClass">
+		<div class="row-height">
+			<div class="col-md-6 col-xs-12 col-sm-12 col-height">
+				<div  class="inside inside-full-height">
+					<h4 class="text-info">Air Mage</h4>
+					<div>
+						<p>The Air Magi are the most sociable of the four classes. They summon intelligent creatures out of thin air and call demons from the mysterious depths of the oceans. They live in wide, open castles. </p>
+						<p>They detest the Forest Magi and their deep, unpenetrable forests filled with mystic dangers.</p>
+					</div>	
+					<button class="btn btn-info chooseClass" value="air" id="air"><strong>Pick this class</strong></button>			
+				</div>		
+			</div>
+			<div class="col-md-6 col-xs-12 col-sm-12 col-height">
+				<div  class="inside inside-full-height">
+					<h4 class="text-warning">Earth Mage</h4>
+					<div>
+						<p>The Earth Magi are introvert, determined wizards. They lead their powerful, simple-minded armies to victory with an iron fist. They believe religiously in the power of the earth and tend to turn to the darker side of magic in their quest for power. Earth Magi live mainly in the underground dungeon complex underneath their castle. </p>
+						<p>They dislike the Death Magi greatly because they have no respect for anything alive and live without principles.</p>
+					</div>
+					<button class="btn btn-warning chooseClass" value="earth" id="earth"><strong>Pick this class</strong></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

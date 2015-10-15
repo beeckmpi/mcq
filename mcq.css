@@ -1,0 +1,96 @@
+/* CSS declarations go here */
+body {
+  background: #000;
+  color: #fff;
+  font-weight: 300;
+  background: #000;
+  color: #fff;
+}
+header {
+  height: 50px;
+  background-image: url("/images/header_back.gif");
+  display: inline;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0;
+  z-index: 100;
+}
+
+header .title {
+  display: inline-block;
+  margin: 5px 5%;
+  font-size: 24px;
+}
+.footer ul {
+  margin: 0 auto;
+  display: block;
+  padding: 0 0;
+  max-width: 450px;
+}
+.footer ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  padding:  0 8px;
+}
+
+.footer {
+  padding-bottom: 15px;
+  z-index: 100;
+  display: inherit;
+  padding: 0 7% 4% 7%;
+}
+.content {  
+  margin: 75px 7% 10%;
+  padding: 10px 0;
+}
+
+.content h3 {
+  color: #D26900;
+}
+
+.content article.news, .well{
+  background: #111; 
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 2px #D26900;
+  border: 1px solid #D26900;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.row {
+  padding: 5px 15px
+}
+.form-group {
+  margin: 5px 0;
+}
+
+a {
+  color: #D26900
+}
+a:hover {
+  color: #D26900;
+  text-decoration: none;
+}
+.chooseClass .col-md-6 {
+  display: table-cell;
+  padding-bottom: 40px;
+}
+.chooseClass .col-md-6 .btn {
+  position: absolute;
+  bottom: 5px;
+}
+@media (min-width: 992px) {
+  .row-height {
+      display: table;
+      table-layout: fixed;
+      height: 100%;
+      width: 100%;
+  }
+  .col-height {
+     display: table-cell;
+     float: none;
+     height: 100%;
+  }
+}

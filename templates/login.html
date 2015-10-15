@@ -1,0 +1,42 @@
+<template name="Login">
+	<div class="row">
+  	<div class="col-md-12">
+  		<h3>Welcome tot the world of Castle Quest</h3>
+  	</div>
+  </div>
+  <div class="row">
+  	<div class="col-md-6">
+			<p>Welcome to the world of Castle Quest.</p>			
+			<form id="loging" class="form-horizontal">
+	    	<div class="form-group">
+	        <label for=username class="col-sm-3 control-label">Login Name:</label>
+	        <div class="col-sm-9">
+	        	<input type="text" id="username" name="username" class="form-control" placeholder="Username">
+	        </div>
+	      </div>
+	      <div class="form-group">
+	        <label for="login" class="col-sm-3 control-label">Password:</label>
+	        <div class="col-sm-9">
+	        	<input type="password" class="form-control" id="login" name="login" placeholder="Password">
+	        </div>
+	      </div>
+	      <div class="form-group">
+	        <div class="col-sm-offset-3 col-sm-9">
+	          <input type="submit" class="btn btn-default"  value="Login">
+	        </div>
+	      </div>
+			</form>
+		</div>
+  	<div class="col-md-6">
+		  <p>
+		  	Only a few mouse-clicks away lies a universe much unlike our own.
+				Powerful wizards roam the land and inhabit great castles. 
+				They summon dangerous creatures and send them off to battle it out with their rivals. 
+				A thriving economy forces the creation of new cities. Powerful, magically enhanced items are scattered throughout the world and can be used by your Creatures.
+			</p>
+			<p>If you don't have a Castle Quest 2 account yet, click on the 'New Account' button.
+			If you already have an account, log in using the form.</p>
+			<a href="/register" class="btn btn-warning">Create a new account</a>
+		</div>		
+	</div>
+</template>
